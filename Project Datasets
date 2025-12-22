@@ -1,0 +1,47 @@
+# Project Datasets
+
+This repository uses multiple datasets generated during the development of the **Segmentation Mask Guided Hybrid CNN–Vision Transformer Framework for Diagnosing Communicable Lung Diseases**. Due to storage limitations, the datasets are hosted externally on Google Drive.
+
+## Dataset Categories
+
+### 1. Segmented Chest X-ray Image Dataset
+- Lung-region–only chest X-ray images
+- Generated using a U-Net–based lung segmentation model
+- Removes irrelevant background regions to focus on clinically significant areas
+
+### 2. Pre-processed (Image-Enhanced) Dataset
+- Images processed using image enhancement techniques
+- Includes normalization and contrast enhancement to improve feature visibility
+- Used as input to the hybrid CNN–Vision Transformer model
+
+### 3. Augmented Image Dataset
+- Generated from the pre-processed dataset using data augmentation techniques
+- Includes geometric and intensity-based transformations
+- Improves model generalization and class balance
+
+### 4. Predicted Mask Dataset
+- Binary lung masks predicted by the segmentation network
+- Corresponds to original chest X-ray images
+- Used for mask-guided feature extraction and analysis
+
+## Dataset Access
+
+All datasets are hosted externally due to size constraints.
+
+🔗 **Google Drive link:**  
+https://drive.google.com/drive/folders/1Et21LCUXUHujeJoqbq5Zwqt3FWk6Qbgh?usp=sharing
+
+Access is provided **for academic and research purposes only**.
+
+## Source Datasets
+
+The generated datasets are derived from the following publicly available chest X-ray repositories:
+https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database
+This dataset is released under Kaggle’s open data terms for research and educational use and contains fully anonymized chest X-ray images. The dataset does not include personally identifiable information, and no additional permissions are required for its use in academic publications.
+The Montgomery County Tuberculosis Chest X-ray Dataset is provided by the U.S. National Library of Medicine (NLM), National Institutes of Health (NIH), and is publicly accessible at:
+https://data.lhncbc.nlm.nih.gov/public/Tuberculosis-Chest-X-ray-Datasets/Montgomery-County-CXR-Set/MontgomerySet/index.html. Shenzhen TB datasets released by the U.S. National Library of Medicine (SZ): URL: https://data.lhncbc.nlm.nih.gov/public/Tuberculosis-Chest-X-ray-Datasets/Shenzhen-Hospital-CXR-Set/index.html.
+
+## Ethical Compliance and Usage Notes
+- All images are anonymized and contain no personally identifiable information.
+- The datasets are intended strictly for **non-commercial research use**.
+- Users must cite the original data sources and this repository when using the datasets.
